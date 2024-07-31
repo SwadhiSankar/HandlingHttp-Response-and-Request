@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/places", async (req, res) => {
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await new Promise((resolve) => setTimeout(resolve, 3000)); //delay to fetch
 
   const fileContent = await fs.readFile("./data/places.json");
 
